@@ -1,0 +1,75 @@
+@import '../../../../styles/theme.scss';
+
+.user-card-container {
+    color: #363636;
+    min-width: 337px;
+    box-shadow: $shade;
+    border-radius: $radius;
+    padding: 32px 16px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+
+
+
+    .name-box {
+        text-align: left;
+
+        .vip-box {
+            margin-bottom: 8px;
+            display: flex;
+
+        
+
+            >div {
+                background: $primary;
+                height: 20px;
+                width: auto;
+                border-radius: 100%;
+                padding: 4px;
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                margin-left: 8px;
+
+                span {
+                    color: white;
+                    font-size: 11px;
+                    }
+
+            }
+          h4 {
+            margin: 0;
+            font-size: 18px;
+        }
+        }
+    
+
+    }
+
+
+    .icon-layout {
+        display: flex;
+        div {
+            width: 24px;
+            height: 24px;
+            position: relative;
+            margin-right: 8px;
+
+
+            >* {
+                img {
+                    object-fit: cover;
+                  }
+            }
+        }
+    }
+
+    .auto-layout {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
