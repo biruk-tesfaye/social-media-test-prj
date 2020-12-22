@@ -9,9 +9,9 @@ export default function Home({ users }: HomeType) {
         <h1>Social Media Users List</h1>
       </div>
 
-      <div className={styles['card-grid-container']}>
+      <div className={styles["card-grid-container"]}>
         {users.map((user) => (
-          <UserCard user={user} />
+          <UserCard key={user.id} user={user} />
         ))}
       </div>
     </div>
